@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>LMS - Nuevos Negocios</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/lms-nvosN.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+
+
+    <script src="js/modals.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+                <a class="navbar-brand" href="index.html"> <img src="img/logo2.png" alt="">
+                    <p class="sr-only sr-only-focusable" href="#">LMS</p>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="mt-3">
+                            <a class="nav-link" data-toggle="modal" href="#ingresaReferidos">
+                                <img src="img/liverpool.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item" id="alta" value="1">
+                            <a class="nav-link" href="alta.html">
+                                <p>Alta</p>
+                            </a>
+                        </li>
+                        <li class="nav-item active" id="busqueda" value="2">
+                            <a class="nav-link" href="busqueda.html">
+                                <p>Búsqueda</p>
+                            </a>
+                        </li>
+                        <li class="nav-item" id="administracion" value="3">
+                            <a class="nav-link" href="administracion.html">
+                                <p>Administración</p>
+                            </a>
+                        </li>
+                        <li class="nav-item" id="reportes" value="4">
+                            <a class="nav-link" href="reportes.html">
+                                <p>Reportes</p>
+                            </a>
+                        </li>
+
+                        <li class="mt-2">
+                            <a class="nav-link" data-toggle="modal" href="index.html">
+                                <button class="btn" type="button">Salir</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="color busqueda">
+        <div></div>
+        <div class="todo">
+            <div class="cabecera">
+                <div class="container">
+                    <div class="cabecera-elementos">
+                        <h2>Búsqueda</h2>
+                        <button class="btn" type="button">Mis datos</button>
+                        <button class="btn btn-outline" type="button">Estado de cuenta</button>
+                    </div>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb-cab">
+                            <li class="breadcrumb-item "><a href="#">Inicio</a></li>
+                            <li class="breadcrumb-item active"><a href="#">Búsqueda</a></li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="gris gris-contenido">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>IMPORTANTE:</p>
+                            <p>La información registrada es la que se tomará en cuenta para la entrega de tus
+                                recompensas.</p>
+                            <p>*Campos obligatorios</p>
+                            <div class="subtit">
+                                Información personal
+                            </div>
+                            <form>
+                                <div class="botones">
+                                    <button type="button" class="btn btn-outline" data-toggle="modal"
+                                        data-target="#modif_datos">Modificar Datos</button>
+
+                                    <button type="submit" id="submit" class="btn btn-outline">Guardar Cambios</button>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-3 col-6">
+                                        <label for="nombre">Nombre*</label>
+                                        <input type="text" class="form-control" id="nombre" placeholder="MARTÍN">
+                                        <div id="nombre_ob" class="h-ob"></div>
+                                    </div>
+                                    <div class="form-group col-md-3 col-6">
+                                        <label for="a_paterno">Apellido Paterno*</label>
+                                        <input type="text" class="form-control" id="a_paterno" placeholder="TORRES">
+                                        <div id="a_paterno_ob" class="h-ob"></div>
+                                    </div>
+                                    <div class="form-group col-md-3 col-6">
+                                        <label for="a_materno">Apellido Materno*</label>
+                                        <input type="text" class="form-control" id="a_materno" placeholder="TORRES">
+                                        <div id="a_materno_ob" class="h-ob"></div>
+                                    </div>
+                                    <div class="form-group col-md-3 col-6">
+                                        <label for="sexo">Sexo*</label>
+                                        <div class="caja" id="sexo">
+                                            <select class="form-control2">
+                                                <option></option>
+                                                <option>Masculino</option>
+                                                <option>Femenino</option>
+                                            </select>
+                                        </div>
+                                        <div id="sexo_ob" class="h-ob"></div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-3 col-6">
+                                        <label for="piso">Piso de venta*</label>
+                                        <div class="caja" id="piso">
+                                            <select class="form-control2">
+                                                <option></option>
+                                                <option>Retailer</option>
+                                                <option>Femenino</option>
+                                            </select>
+                                        </div>
+                                        <div id="piso_ob" class="h-ob"></div>
+                                    </div>
+                                    <div class="form-group col-md-3 col-6">
+                                        <label for="id">ID</label>
+                                        <input type="number" class="form-control" id="id" placeholder="123">
+                                    </div>
+
+                                    <div class="form-group col-md-3 col-7">
+
+                                        <label for="adjuntar">Adjuntar foto de perfil</label>
+                                        <input type="file" value="Continue.." class="form-control-file adjuntar"
+                                            id="adjuntar">
+                                        <span class="explorar">Explorar</span>
+
+                                    </div>
+                                    <div class="form-group col-md-3 col-12">
+                                        <label for="puesto">Puesto</label>
+                                        <input type="text" class="form-control" id="puesto">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-4 col-12">
+                                        <label for="correo">Correo electrónico*</label>
+                                        <input type="email" class="form-control" id="correo"
+                                            placeholder="martin.torres@samsungplus.com">
+                                        <div id="correo_ob" class="h-ob"></div>
+                                    </div>
+                                    <div class="form-group col-md-4 col-6">
+                                        <label for="cel">Teléfono celular*</label>
+                                        <input type="tel" class="form-control" id="cel" placeholder="55 1234 5689">
+                                        <div id="cel_ob" class="h-ob"></div>
+                                    </div>
+                                    <div class="form-group col-md-4 col-6">
+                                        <label for="pass">Cambiar contraseña</label>
+                                        <input type="password" class="form-control current-password" id="pass">
+
+                                    </div>
+                                </div>
+                                <label for="fecha">Fecha de nacimiento*</label>
+                                <div class="form-row">
+
+                                    <div class="form-group col-md-4 col-4">
+
+                                        <div class="caja" id="dia">
+                                            <select class="form-control2 0-30">
+                                                <option></option>
+                                            </select>
+                                        </div>
+                                        <div id="dia_ob" class="h-ob"></div>
+                                    </div>
+                                    <div class="form-group col-md-4 col-4">
+
+                                        <div class="caja" id="mes">
+                                            <select class="form-control2">
+                                                <option></option>
+                                                <option>Enero</option>
+                                                <option>Febrero</option>
+                                                <option>Marzo</option>
+                                                <option>Abril</option>
+                                                <option>Mayo</option>
+                                                <option>Junio</option>
+                                                <option>Julio</option>
+                                                <option>Agosto</option>
+                                                <option>Septiembre</option>
+                                                <option>Octubre</option>
+                                                <option>Noviembre</option>
+                                                <option>Diciembre</option>
+                                            </select>
+                                        </div>
+                                        <div id="mes_ob" class="h-ob"></div>
+                                    </div>
+                                    <div class="form-group col-md-4 col-4">
+
+                                        <div class="caja" id="anio">
+                                            <select class="form-control2 1900-2019">
+                                                <option></option>
+                                            </select>
+                                        </div>
+                                        <div id="anio_ob" class="h-ob"></div>
+                                    </div>
+                                </div>
+                        </div>
+                        </form>
+                    </div>
+                    <div class="col-md-12">
+                        <a class="btn" data-toggle="modal" href="#modal1">
+                            Modal
+                        </a>
+                    </div>
+                </div>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Mis datos</a></li>
+                        <li class="breadcrumb-item"><a href="#">Estados de cuenta</a></li>
+                        <li class="breadcrumb-item"><a href="#">Mis canjes</a></li>
+                        <li class="breadcrumb-item"><a href="#">Ranking</a></li>
+                    </ol>
+                </nav>
+            </div>
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <a href="">Aviso legal</a>
+                            <a href="">Aviso de privacidad</a>
+                            <a href="">Términos y condiciones</a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="tel:018006816000"><img src="img/headset.svg" alt="" class="icon">
+                                <div class="d-none d-md-inline">CAT 01 800 681 6000</div>
+                            </a>
+                            <a href="mailto:samsungplus@samsung.mx"><img src="img/mail.svg" alt="" class="icon">
+                                <div class="d-none d-md-inline">samsungplus@samsung.mx </div>
+                            </a>
+                            <a href="" class="footer-img"><img src="img/samsung-footer.svg" alt=""
+                                    class="footer-img"></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Modal -->
+
+        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true" style="z-index: 99999999;">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h2 class="modal-title">
+                            <img src="img/exitoso.svg" alt="">
+                            Tus datos han
+                            sido modificados con éxito</h2>
+                        <button class="btn btn-samsung2" type="button" data-dismiss="modal" aria-label="Close">Aceptar</button>
+                        <!-- <button class="btn btn-samsung2" type="button" data-dismiss="modal" aria-label="Close">Aceptar</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/custom.js"></script>
+
+
+
+
+</body>
+
+</html>

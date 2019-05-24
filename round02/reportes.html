@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <title>LMS Nuevos Negocios</title>
+</head>
+
+<body>
+    <header class="row">
+        <nav>
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <p>Nuevos Negocios</p>
+            <img src="img/logo.png" alt="">
+        </nav>
+        <ul id="slide-out" class="sidenav sidenav-fixed">
+            <li><a class="sidenav-close" href="#!">X</a></li>
+            <a href="index.html" class="brand-logo"><img src="img/logo.png" alt=""></a>
+            <li value="1"><a href="alta.html ">Alta</a></li>
+            <li value="2"><a href="busqueda.html">Búsqueda</a></li>
+            <li value="3"><a href="administracion.html">Administración</a></li>
+            <li value="4"><a href="reportes.html" class="active">Reportes</a></li>
+        </ul>
+    </header>
+    <main class="color reportes">
+        <div></div>
+        <div class="container">
+            <div class="row">
+                <form class="col s12">
+                    <h1 class=" center-align">REPORTES</h1>
+                    <div class="row">
+                        <dixv class="col s12">
+                            <ul id="tabs-swipe-reportes" class="tabs">
+                                <li class="tab col s4"><a href="#reportes-1">Sección 1</a></li>
+                                <li class="tab col s4"><a class="active" href="#reportes-2">Sección 2</a></li>
+                                <li class="tab col s4"><a href="#reportes-3">Sección 3</a></li>
+
+                            </ul>
+                            <div id="reportes-1" class="col s12">
+                                <div class="row ">
+                                    <h5>Sección 1</h5>
+                                    <div class="input-field col s6 m4">
+                                        <input id="nombre" type="text" class="validate">
+                                        <label for="nombre">Nombre</label>
+                                        <span class="helper-text" data-error="Campo inválido" data-success="Campo válido"></span>
+                                    </div>
+                                    <div class="input-field col s6 m4">
+                                        <input id="apellidoP" type="text" class="validate">
+                                        <label for="apellidoP">Apellido Paterno</label>
+                                        <span class="helper-text" data-error="Campo inválido" data-success="Campo válido"></span>
+                                    </div>
+                                    <div class="input-field col s6 m4">
+                                        <input id="apellidoM" type="text" class="validate">
+                                        <label for="apellidoM">Apellido Materno</label>
+                                        <span class="helper-text" data-error="Campo inválido" data-success="Campo válido"></span>
+                                    </div>
+                                    <div class="input-field col s6 m4">
+                                        <input type="password" class="validate">
+                                        <label>Password</label>
+                                        <span class="helper-text" data-error="Campo inválido" data-success="Campo válido"></span>
+                                    </div>
+                                    <div class="input-field col s6 m4">
+                                        <input id="email" type="email" class="validate">
+                                        <label for="email">Email</label>
+                                        <span class="helper-text" data-error="Campo inválido" data-success="Campo válido"></span>
+                                    </div>
+                                    <div class="input-field col s6 m4">
+                                        <input type="text" class="validate">
+                                        <label>Texto</label>
+                                        <span class="helper-text" data-error="Campo inválido" data-success="Campo válido"></span>
+                                    </div>
+                                    <div class="input-field col s6 m4">
+                                        <p>
+                                            <label>
+                                                <input class="with-gap" name="group3" type="radio" checked />
+                                                <span>Checked</span>
+                                            </label>
+                                        </p>
+                                        <p>
+                                            <label>
+                                                <input class="with-gap" name="group3" type="radio" />
+                                                <span>Normal</span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                    <div class="input-field col s6 m4">
+                                        <form action="#">
+                                            <p>
+                                                <label>
+                                                    <input type="checkbox" checked="checked" />
+                                                    <span>Checked</span>
+                                                </label>
+                                            </p>
+                                            <p>
+                                                <label>
+                                                    <input type="checkbox" />
+                                                    <span>Normal</span>
+                                                </label>
+                                            </p>
+                                            <p>
+                                                <label>
+                                                    <input type="checkbox" disabled="disabled" />
+                                                    <span>Deshabilitado</span>
+                                                </label>
+                                            </p>
+                                        </form>
+                                    </div>
+                                    <div class="input-field col s6 m4">
+                                        <input type="text" class="datepicker" placeholder="Fecha">
+                                    </div>
+                                    <div class="input-field col s6 m4">
+                                        <div class="input-field col s12">
+                                            <select>
+                                                <option value="" disabled selected>Elige opción </option>
+                                                <option value="1"> Opción 1</option>
+                                                <option value="2"> Opción 2</option>
+                                                <option value="3"> Opción 3</option>
+                                            </select>
+                                            <label>Select</label>
+                                        </div>
+                                    </div>
+                                    <!-- Switch -->
+                                    <div class="input-field col s6 m4">
+                                        <div class="switch">
+                                            <label>
+                                                No
+                                                <input type="checkbox">
+                                                <span class="lever"></span>
+                                                Sí
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="reportes-2" class="col s12">
+                                <div class="row">
+                                    <h5>Sección 2</h5>
+                                    <div class="input-field col s6 m4">
+                                        <input id="nombre" type="text" class="validate">
+                                        <label for="nombre">Nombre</label>
+                                        <span class="helper-text" data-error="Campo inválido" data-success="Campo válido"></span>
+                                    </div>
+                                    <div class="input-field col s6 m4">
+                                        <input id="apellidoP" type="text" class="validate">
+                                        <label for="apellidoP">Apellido Paterno</label>
+                                        <span class="helper-text" data-error="Campo inválido" data-success="Campo válido"></span>
+                                    </div>
+                                    <div class="input-field col s6 m4">
+                                        <input id="apellidoM" type="text" class="validate">
+                                        <label for="apellidoM">Apellido Materno</label>
+                                        <span class="helper-text" data-error="Campo inválido" data-success="Campo válido"></span>
+                                    </div>
+                                    <div class="input-field col s6 m4">
+                                        <input type="password" class="validate">
+                                        <label>Password</label>
+                                        <span class="helper-text" data-error="Campo inválido" data-success="Campo válido"></span>
+                                    </div>
+                                    <div class="input-field col s6 m4">
+                                        <input id="email" type="email" class="validate">
+                                        <label for="email">Email</label>
+                                        <span class="helper-text" data-error="Campo inválido" data-success="Campo válido"></span>
+                                    </div>
+                                    <div class="input-field col s6 m4">
+                                        <input type="text" class="validate">
+                                        <label>Texto</label>
+                                        <span class="helper-text" data-error="Campo inválido" data-success="Campo válido"></span>
+                                    </div>
+                                    <div class="input-field col s6 m4">
+                                        <p>
+                                            <label>
+                                                <input class="with-gap" name="group3" type="radio" checked />
+                                                <span>Checked</span>
+                                            </label>
+                                        </p>
+                                        <p>
+                                            <label>
+                                                <input class="with-gap" name="group3" type="radio" />
+                                                <span>Normal</span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                    <div class="input-field col s6 m4">
+                                        <form action="#">
+                                            <p>
+                                                <label>
+                                                    <input type="checkbox" checked="checked" />
+                                                    <span>Checked</span>
+                                                </label>
+                                            </p>
+                                            <p>
+                                                <label>
+                                                    <input type="checkbox" />
+                                                    <span>Normal</span>
+                                                </label>
+                                            </p>
+                                            <p>
+                                                <label>
+                                                    <input type="checkbox" disabled="disabled" />
+                                                    <span>Deshabilitado</span>
+                                                </label>
+                                            </p>
+                                        </form>
+                                    </div>
+                                    <div class="input-field col s6 m4">
+                                        <input type="text" class="datepicker" placeholder="Fecha">
+                                    </div>
+                                    <div class="input-field col s6 m4">
+                                        <div class="input-field col s12">
+                                            <select>
+                                                <option value="" disabled selected>Elige opción </option>
+                                                <option value="1"> Opción 1</option>
+                                                <option value="2"> Opción 2</option>
+                                                <option value="3"> Opción 3</option>
+                                            </select>
+                                            <label>Select</label>
+                                        </div>
+                                    </div>
+                                    <!-- Switch -->
+                                    <div class="input-field col s6 m4">
+                                        <div class="switch">
+                                            <label>
+                                                No
+                                                <input type="checkbox">
+                                                <span class="lever"></span>
+                                                Sí
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="reportes-3" class="col s12">
+                                <div class="row">
+                                    <h5>Sección 3</h5>
+                                    <div class="input-field col s6 m4">
+                                        <input id="nombre" type="text" class="validate">
+                                        <label for="nombre">Nombre</label>
+                                        <span class="helper-text" data-error="Campo inválido" data-success="Campo válido"></span>
+                                    </div>
+                                    <div class="input-field col s6 m4">
+                                        <input id="apellidoP" type="text" class="validate">
+                                        <label for="apellidoP">Apellido Paterno</label>
+                                        <span class="helper-text" data-error="Campo inválido" data-success="Campo válido"></span>
+                                    </div>
+                                    <div class="input-field col s6 m4">
+                                        <input id="apellidoM" type="text" class="validate">
+                                        <label for="apellidoM">Apellido Materno</label>
+                                        <span class="helper-text" data-error="Campo inválido" data-success="Campo válido"></span>
+                                    </div>
+                                    <div class="input-field col s6 m4">
+                                        <input type="password" class="validate">
+                                        <label>Password</label>
+                                        <span class="helper-text" data-error="Campo inválido" data-success="Campo válido"></span>
+                                    </div>
+                                    <div class="input-field col s6 m4">
+                                        <input id="email" type="email" class="validate">
+                                        <label for="email">Email</label>
+                                        <span class="helper-text" data-error="Campo inválido" data-success="Campo válido"></span>
+                                    </div>
+                                    <div class="input-field col s6 m4">
+                                        <input type="text" class="validate">
+                                        <label>Texto</label>
+                                        <span class="helper-text" data-error="Campo inválido" data-success="Campo válido"></span>
+                                    </div>
+                                    <div class="input-field col s6 m4">
+                                        <p>
+                                            <label>
+                                                <input class="with-gap" name="group3" type="radio" checked />
+                                                <span>Checked</span>
+                                            </label>
+                                        </p>
+                                        <p>
+                                            <label>
+                                                <input class="with-gap" name="group3" type="radio" />
+                                                <span>Normal</span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                    <div class="input-field col s6 m4">
+                                        <form action="#">
+                                            <p>
+                                                <label>
+                                                    <input type="checkbox" checked="checked" />
+                                                    <span>Checked</span>
+                                                </label>
+                                            </p>
+                                            <p>
+                                                <label>
+                                                    <input type="checkbox" />
+                                                    <span>Normal</span>
+                                                </label>
+                                            </p>
+                                            <p>
+                                                <label>
+                                                    <input type="checkbox" disabled="disabled" />
+                                                    <span>Deshabilitado</span>
+                                                </label>
+                                            </p>
+                                        </form>
+                                    </div>
+                                    <div class="input-field col s6 m4">
+                                        <input type="text" class="datepicker" placeholder="Fecha">
+                                    </div>
+                                    <div class="input-field col s6 m4">
+                                        <div class="input-field col s12">
+                                            <select>
+                                                <option value="" disabled selected>Elige opción </option>
+                                                <option value="1"> Opción 1</option>
+                                                <option value="2"> Opción 2</option>
+                                                <option value="3"> Opción 3</option>
+                                            </select>
+                                            <label>Select</label>
+                                        </div>
+                                    </div>
+                                    <!-- Switch -->
+                                    <div class="input-field col s6 m4">
+                                        <div class="switch">
+                                            <label>
+                                                No
+                                                <input type="checkbox">
+                                                <span class="lever"></span>
+                                                Sí
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+            </div>
+            </form>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ipsam quos inventore voluptates cupiditate voluptatibus impedit enim dolor dolores fugit autem debitis nesciunt, delectus unde possimus voluptate voluptatum magnam quaerat?
+            </p>
+        </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <!--JavaScript at end of body for optimized loading -->
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+</body>
+
+</html>

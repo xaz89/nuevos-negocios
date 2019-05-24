@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+  <g id="headset" transform="translate(-504 -696)">
+    <g id="Grupo_5409" data-name="Grupo 5409" transform="translate(504.5 701.978)">
+      <path id="Trazado_6630" data-name="Trazado 6630" d="M506.326,709.761s-1.826-.545-1.826-1.217v-1.826c0-1.217,1.826-1.217,1.826-1.217Z" transform="translate(-504.5 -705.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Trazado_6631" data-name="Trazado 6631" d="M524.5,709.761s1.826-.545,1.826-1.217v-1.826c0-1.217-1.826-1.217-1.826-1.217Z" transform="translate(-512.326 -705.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Trazado_6632" data-name="Trazado 6632" d="M522.761,712.5c0,2.435-2.12,3.631-4.261,3.652" transform="translate(-509.978 -708.239)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Trazado_6633" data-name="Trazado 6633" d="M515.935,718.717h-1.826a.609.609,0,0,1-.609-.609h0a.609.609,0,0,1,.609-.609h1.826a.609.609,0,0,1,.609.609h0A.609.609,0,0,1,515.935,718.717Z" transform="translate(-508.022 -710.196)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+    <path id="Trazado_6634" data-name="Trazado 6634" d="M517.848,701.978v-.3a5.174,5.174,0,0,0-5.174-5.174h0a5.174,5.174,0,0,0-5.174,5.174v.3" transform="translate(-1.174)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  </g>
+</svg>
