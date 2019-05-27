@@ -8116,6 +8116,7 @@ h5 {
   min-height: 100% !important;
   height: 100%;
   background-size: auto;
+  background-image: url("../img/login.jpg");
   background-position: center 0;
   background-attachment: fixed;
   padding: 8rem;
@@ -8166,9 +8167,11 @@ h5 {
 }
 .bloque02 form {
   box-shadow: 0rem 0rem 1.5rem 0rem #d1d1d1;
-  margin-left: -6rem;
+  margin-left: -5rem;
   padding: 3rem;
-  background: white;
+  background: #ffffff;
+  position: relative;
+  right: -150%;
 }
 .bloque02 form .btn, .bloque02 form .btn-large, .bloque02 form .btn-small,
 .bloque02 form .btn:hover,

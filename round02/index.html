@@ -14,11 +14,12 @@
 
 <body>
 
+
     <div class="fila">
-        <div class="bloque01 col hide-on-small-only">
-            <video autoplay="autoplay" loop="loop" id="video_background" preload="auto" volume="50" />
+        <div class="bloque01 col hide-on-small-only" id="bloque01">
+            <!-- <video autoplay="autoplay" loop="loop" id="video_background" preload="auto" volume="50" />
             <source src="img/video.mp4" type="video/mp4" />
-            </video/>
+            </video /> -->
             <img src="img/logo.png" alt="">
             <h1>
                 <a href="" class="typewrite" data-period="2000" data-type='[ "Nuevos Negocios", "Loyalty Marketing Services" ]'>
@@ -27,12 +28,15 @@
             </h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nesciunt dicta expedita sed, eos error esse soluta nihil est ullam tempore ducimus. Excepturi, iure! Hic nemo modi reiciendis magnam consequuntur!
             </p>
-
         </div>
         <main class="bloque02 col">
             <img src="img/logo.png" alt="">
             <h3>Nuevos negocios</h3>
-            <form>
+
+
+
+            <form id="form">
+
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="material-icons prefix">account_circle</i>
@@ -55,6 +59,51 @@
     <!--JavaScript at end of body for optimized loading -->
     <script type="text/javascript " src="js/materialize.js "></script>
     <script type="text/javascript " src="js/custom.js "></script>
+
+
+    <!-- load scripts after dom has been rendered -->
+    <script src="js/TweenLite.js"></script>
+    <script src="js/CSSPlugin.js"></script>
+    <script src="js/EasePack.js"></script>
+
+    <!-- add your own script -->
+    <script>
+        var form = document.getElementById("form");
+        /*  var bloque02 = document.getElementById("bloque02"); */
+
+
+
+        function myFunction(x) {
+            if (x.matches) { // If media query matches
+                document.body.style.width = " ";
+
+
+            } else {
+
+                TweenLite.to(form, 1, {
+                    right: '0%',
+                    backgroundColor: '#fbfbfb',
+                    delay: 0.5,
+                    ease: Back.easeOut,
+                });
+
+                /* TweenLite.to(bloque02, 1, {
+                    rotation: 0,
+                    left: '0%',
+                    backgroundColor: '#dc4747',
+                    delay: 2,
+                    ease: Bounce.easeOut,
+                    rotation: 20,
+                }); */
+            }
+        }
+
+        var x = window.matchMedia("(max-width: 700px)")
+        myFunction(x) // Call listener function at run time
+        x.addListener(myFunction) // Attach listener function on state changes
+    </script>
+
+
 </body>
 
 </html>

@@ -8139,6 +8139,10 @@ h5 {
   color: #ffffff;
 }
 
+#form {
+  position: relative;
+}
+
 .bloque02 {
   width: 35%;
   min-height: 100% !important;
