@@ -8760,6 +8760,7 @@ main {
   }
   .bloque02 form {
     margin-left: 0;
+    right: 0;
   }
   .bloque02 img {
     display: block;
