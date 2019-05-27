@@ -670,6 +670,10 @@ main {
     .sidenav-close {
         display: block !important;
     }
+    .carousel.carousel-slider {
+        height: 200vmax!important;
+        min-height: 100vmax;
+    }
     main {
         padding-left: 0;
     }
