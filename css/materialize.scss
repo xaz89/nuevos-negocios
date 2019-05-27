@@ -1,0 +1,725 @@
+@import "../node_modules/materialize-css/sass/materialize";
+$alta: #00a1dd;
+$busqueda: #eb007a;
+$administracion: #f79032;
+$reportes: #005b17;
+$white: #ffffff;
+$dark: #4e4e4e;
+html,
+body {
+    font-family: "Roboto", sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 100;
+}
+
+.bloque01 {
+    width: 65%;
+    min-height: 100%!important;
+    height: 100%;
+    background-size: auto;
+    // background-image: url('../img/login.jpg');
+    background-position: center 0;
+    background-attachment: fixed;
+    padding: 8rem;
+    color: $white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    img {
+        width: 10rem;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+    a {
+        color: $white;
+    }
+}
+
+.bloque02 {
+    width: 35%;
+    min-height: 100%!important;
+    height: 100%;
+    background-color: $white;
+    padding: 1rem 6rem 1rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    img {
+        width: 8rem;
+        margin-top: -2rem;
+        display: none;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+    h3 {
+        margin-bottom: 2rem;
+        display: none;
+        color: $white;
+    }
+    form {
+        box-shadow: 0rem 0rem 1.5rem 0rem #d1d1d1;
+        margin-left: -6rem;
+        padding: 3rem;
+        background: white;
+        .btn,
+        .btn:hover,
+        .btn-small:hover,
+        .btn-large:hover {
+            background-color: $white;
+            color: $dark;
+        }
+        input:not(.browser-default):focus:not(.browser-default) {
+            border-bottom: 1px solid $alta;
+            -webkit-box-shadow: 0 1px 0 0 $alta;
+            box-shadow: 0 1px 0 0 $alta;
+        }
+        input:not(.browser-default):focus:not([readonly])+label {
+            color: $alta;
+        }
+        input:not(.browser-default).valid {
+            border-bottom: 1px solid $alta;
+            -webkit-box-shadow: 0 1px 0 0 $alta;
+            box-shadow: 0 1px 0 0 $alta;
+        }
+        .input-field .prefix.active {
+            color: $alta;
+        }
+    }
+}
+
+.fila {
+    min-height: 100%;
+    height: 100%;
+    .col {
+        float: left;
+    }
+}
+
+.waves-effect.waves-azul .waves-ripple {
+    background-color: rgba($alta, 0.65);
+}
+
+nav {
+    display: none;
+    background: white;
+    a {
+        color: initial;
+    }
+    img {
+        width: 4.5rem;
+        margin-right: 1rem;
+        height: auto;
+    }
+    p {
+        font-size: 1rem;
+        margin: 0;
+        color: $dark;
+    }
+}
+
+.modal {
+    left: 20%;
+}
+
+.sidenav {
+    width: 16.7%;
+    z-index: 999999;
+    box-shadow: 0rem 0rem 1rem #adb5bd;
+     :hover {
+        color: white;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        &:nth-child(3) {
+            background: $alta;
+        }
+        &:nth-child(4) {
+            background: $busqueda;
+        }
+        &:nth-child(5) {
+            background: $administracion;
+        }
+        &:nth-child(6) {
+            background: $reportes;
+        }
+    }
+    li {
+        &:nth-child(3)>.active {
+            color: $white;
+            background: $alta;
+        }
+        &:nth-child(4)>.active {
+            color: $white;
+            background: $busqueda;
+        }
+        &:nth-child(5)>.active {
+            color: $white;
+            background: $administracion;
+        }
+        &:nth-child(6)>.active {
+            color: $white;
+            background: $reportes;
+        }
+    }
+}
+
+.sidenav li>a {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    height: 5rem;
+    line-height: 5rem;
+    padding: 0 32px;
+}
+
+.sidenav-close {
+    display: none !important;
+    text-align: right;
+    &:hover {
+        background-color: transparent !important;
+        color: initial;
+    }
+}
+
+main {
+    padding-left: 16.6666666667%;
+}
+
+.brand-logo {
+    img {
+        margin: 2.5rem auto;
+        display: block;
+        max-width: 10rem;
+        width: 6rem;
+    }
+}
+
+.alta {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
+        color: $alta;
+    }
+    .btn,
+    .btn:hover,
+    .btn-small:hover,
+    .btn-large:hover {
+        background-color: $alta;
+    }
+    input:not(.browser-default):focus:not(.browser-default) {
+        border-bottom: 1px solid $alta;
+        -webkit-box-shadow: 0 1px 0 0 $alta;
+        box-shadow: 0 1px 0 0 $alta;
+    }
+    input:not(.browser-default):focus:not([readonly])+label {
+        color: $alta;
+    }
+    input:not(.browser-default).valid {
+        border-bottom: 1px solid $alta;
+        -webkit-box-shadow: 0 1px 0 0 $alta;
+        box-shadow: 0 1px 0 0 $alta;
+    }
+    [type="radio"]:checked+span:after,
+    [type="radio"].with-gap:checked+span:before,
+    [type="radio"].with-gap:checked+span:after {
+        border: 2px solid $alta;
+    }
+    [type="radio"]:checked+span:after,
+    [type="radio"].with-gap:checked+span:after {
+        background-color: $alta;
+    }
+    [type="radio"]:checked+span:after,
+    [type="radio"].with-gap:checked+span:before,
+    [type="radio"].with-gap:checked+span:after {
+        border: 2px solid $alta;
+    }
+    [type="checkbox"]:checked+span:not(.lever):before {
+        border-right: 2px solid $alta;
+        border-bottom: 2px solid $alta;
+    }
+    .datepicker-date-display {
+        background-color: $alta;
+    }
+    button:focus {
+        background-color: $alta;
+    }
+    .datepicker-cancel,
+    .datepicker-clear,
+    .datepicker-today,
+    .datepicker-done {
+        color: $alta;
+    }
+    .datepicker-table td.is-today {
+        color: $alta;
+    }
+    .datepicker-table td.is-selected {
+        background-color: $alta;
+    }
+    .switch label input[type="checkbox"]:checked+.lever {
+        background-color: rgba($alta, 0.25);
+    }
+    .switch label .lever:before {
+        background-color: rgba($alta, 0.15);
+    }
+    .switch label input[type="checkbox"]:checked+.lever:after {
+        background-color: $alta;
+    }
+    .tabs .tab a:hover,
+    .tabs .tab a.active {
+        color: $alta;
+    }
+    .tabs .tab a {
+        color: rgba($alta, .7);
+    }
+    .tabs .indicator {
+        background-color: $alta;
+    }
+    .tabs .tab a:focus,
+    .tabs .tab a:focus.active {
+        background-color: rgba($alta, .2);
+    }
+}
+
+.busqueda {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
+        color: $busqueda;
+    }
+    input:not(.browser-default):focus:not(.browser-default) {
+        border-bottom: 1px solid $busqueda;
+        -webkit-box-shadow: 0 1px 0 0 $busqueda;
+        box-shadow: 0 1px 0 0 $busqueda;
+    }
+    input:not(.browser-default):focus:not([readonly])+label {
+        color: $busqueda;
+    }
+    input:not(.browser-default).valid {
+        border-bottom: 1px solid $busqueda;
+        -webkit-box-shadow: 0 1px 0 0 $busqueda;
+        box-shadow: 0 1px 0 0 $busqueda;
+    }
+    [type="radio"]:checked+span:after,
+    [type="radio"].with-gap:checked+span:before,
+    [type="radio"].with-gap:checked+span:after {
+        border: 2px solid $busqueda;
+    }
+    [type="radio"]:checked+span:after,
+    [type="radio"].with-gap:checked+span:after {
+        background-color: $busqueda;
+    }
+    [type="radio"]:checked+span:after,
+    [type="radio"].with-gap:checked+span:before,
+    [type="radio"].with-gap:checked+span:after {
+        border: 2px solid $busqueda;
+    }
+    [type="checkbox"]:checked+span:not(.lever):before {
+        border-right: 2px solid $busqueda;
+        border-bottom: 2px solid $busqueda;
+    }
+    .datepicker-date-display {
+        background-color: $busqueda;
+    }
+    button:focus {
+        background-color: $busqueda;
+    }
+    .datepicker-cancel,
+    .datepicker-clear,
+    .datepicker-today,
+    .datepicker-done {
+        color: $busqueda;
+    }
+    .datepicker-table td.is-today {
+        color: $busqueda;
+    }
+    .datepicker-table td.is-selected {
+        background-color: $busqueda;
+    }
+    .switch label input[type="checkbox"]:checked+.lever {
+        background-color: rgba($busqueda, 0.25);
+    }
+    .switch label .lever:before {
+        background-color: rgba($busqueda, 0.15);
+    }
+    .switch label input[type="checkbox"]:checked+.lever:after {
+        background-color: $busqueda;
+    }
+    .tabs .tab a:hover,
+    .tabs .tab a.active {
+        color: $busqueda;
+    }
+    .tabs .tab a {
+        color: rgba($busqueda, .7);
+    }
+    .tabs .indicator {
+        background-color: $busqueda;
+    }
+    .tabs .tab a:focus,
+    .tabs .tab a:focus.active {
+        background-color: rgba($busqueda, .2);
+    }
+}
+
+.administracion {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
+        color: $administracion;
+    }
+    input:not(.browser-default):focus:not(.browser-default) {
+        border-bottom: 1px solid $administracion;
+        -webkit-box-shadow: 0 1px 0 0 $administracion;
+        box-shadow: 0 1px 0 0 $administracion;
+    }
+    input:not(.browser-default):focus:not([readonly])+label {
+        color: $administracion;
+    }
+    input:not(.browser-default).valid {
+        border-bottom: 1px solid $administracion;
+        -webkit-box-shadow: 0 1px 0 0 $administracion;
+        box-shadow: 0 1px 0 0 $administracion;
+    }
+    [type="radio"]:checked+span:after,
+    [type="radio"].with-gap:checked+span:before,
+    [type="radio"].with-gap:checked+span:after {
+        border: 2px solid $administracion;
+    }
+    [type="radio"]:checked+span:after,
+    [type="radio"].with-gap:checked+span:after {
+        background-color: $administracion;
+    }
+    [type="radio"]:checked+span:after,
+    [type="radio"].with-gap:checked+span:before,
+    [type="radio"].with-gap:checked+span:after {
+        border: 2px solid $administracion;
+    }
+    [type="checkbox"]:checked+span:not(.lever):before {
+        border-right: 2px solid $administracion;
+        border-bottom: 2px solid $administracion;
+    }
+    .datepicker-date-display {
+        background-color: $administracion;
+    }
+    button:focus {
+        background-color: $administracion;
+    }
+    .datepicker-cancel,
+    .datepicker-clear,
+    .datepicker-today,
+    .datepicker-done {
+        color: $administracion;
+    }
+    .datepicker-table td.is-today {
+        color: $administracion;
+    }
+    .datepicker-table td.is-selected {
+        background-color: $administracion;
+    }
+    .switch label input[type="checkbox"]:checked+.lever {
+        background-color: rgba($administracion, 0.25);
+    }
+    .switch label .lever:before {
+        background-color: rgba($administracion, 0.15);
+    }
+    .switch label input[type="checkbox"]:checked+.lever:after {
+        background-color: $administracion;
+    }
+    .tabs .tab a:hover,
+    .tabs .tab a.active {
+        color: $administracion;
+    }
+    .tabs .tab a {
+        color: rgba($administracion, .7);
+    }
+    .tabs .indicator {
+        background-color: $administracion;
+    }
+    .tabs .tab a:focus,
+    .tabs .tab a:focus.active {
+        background-color: rgba($administracion, .2);
+    }
+}
+
+.reportes {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
+        color: $reportes;
+    }
+    input:not(.browser-default):focus:not(.browser-default) {
+        border-bottom: 1px solid $reportes;
+        -webkit-box-shadow: 0 1px 0 0 $reportes;
+        box-shadow: 0 1px 0 0 $reportes;
+    }
+    input:not(.browser-default):focus:not([readonly])+label {
+        color: $reportes;
+    }
+    input:not(.browser-default).valid {
+        border-bottom: 1px solid $reportes;
+        -webkit-box-shadow: 0 1px 0 0 $reportes;
+        box-shadow: 0 1px 0 0 $reportes;
+    }
+    [type="radio"]:checked+span:after,
+    [type="radio"].with-gap:checked+span:before,
+    [type="radio"].with-gap:checked+span:after {
+        border: 2px solid $reportes;
+    }
+    [type="radio"]:checked+span:after,
+    [type="radio"].with-gap:checked+span:after {
+        background-color: $reportes;
+    }
+    [type="radio"]:checked+span:after,
+    [type="radio"].with-gap:checked+span:before,
+    [type="radio"].with-gap:checked+span:after {
+        border: 2px solid $reportes;
+    }
+    [type="checkbox"]:checked+span:not(.lever):before {
+        border-right: 2px solid $reportes;
+        border-bottom: 2px solid $reportes;
+    }
+    .datepicker-date-display {
+        background-color: $reportes;
+    }
+    button:focus {
+        background-color: $reportes;
+    }
+    .datepicker-cancel,
+    .datepicker-clear,
+    .datepicker-today,
+    .datepicker-done {
+        color: $reportes;
+    }
+    .datepicker-table td.is-today {
+        color: $reportes;
+    }
+    .datepicker-table td.is-selected {
+        background-color: $reportes;
+    }
+    .switch label input[type="checkbox"]:checked+.lever {
+        background-color: rgba($reportes, 0.25);
+    }
+    .switch label .lever:before {
+        background-color: rgba($reportes, 0.15);
+    }
+    .switch label input[type="checkbox"]:checked+.lever:after {
+        background-color: $reportes;
+    }
+    .tabs .tab a:hover,
+    .tabs .tab a.active {
+        color: $reportes;
+    }
+    .tabs .tab a {
+        color: rgba($reportes, .7);
+    }
+    .tabs .indicator {
+        background-color: $reportes;
+    }
+    .tabs .tab a:focus,
+    .tabs .tab a:focus.active {
+        background-color: rgba($reportes, .2);
+    }
+}
+
+.color {
+    transition-delay: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.hover {
+    position: absolute;
+    z-index: 1015;
+    height: 110vw;
+    width: 83.333333333%;
+    transition-delay: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    top: 0;
+}
+
+.azul {
+    background-color: rgba($alta, 0.6);
+    background-image: url("../img/alta.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    /* background-color: rgba($alta, 0.6);
+    background-image: url("../img/alta.png");
+    background-origin: padding-box;
+    background-repeat: no-repeat;
+    background-position-x: 60%;
+    background-position-y: top;
+    background-attachment: fixed; */
+}
+
+.rosa {
+    background-color: rgba($busqueda, 0.6);
+    background-image: url("../img/busqueda.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    // background-origin: padding-box;
+    // background-repeat: no-repeat;
+    // background-position-x: 60%;
+    // background-position-y: top;
+    // background-attachment: fixed;
+}
+
+.amarillo {
+    background-color: rgba($administracion, 0.6);
+    background-image: url("../img/administracion.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    /* background-color: rgba($administracion, 0.6);
+    background-image: url("../img/administracion.png");
+    background-origin: padding-box;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    background-color: rgba($administracion, .6);
+    background-image: url("../img/administracion.png");
+    /* background-origin: padding-box;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    width: 83.333333333%;
+    left: 17%; */
+}
+
+.verde {
+    background-color: rgba($reportes, 0.6);
+    background-image: url("../img/reportes.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    /* background-color: rgba(0, 91, 23, 0.6);
+    background-image: url("../img/reportes.png");
+    background-origin: padding-box;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed; */
+}
+
+.dropdown-content {
+    li {
+        span {
+            color: $dark !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    body {
+        padding-left: 0;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    .modal {
+        left: 0;
+    }
+    .sidenav {
+        width: auto;
+        .brand-logo {
+            img {
+                display: none;
+            }
+        }
+    }
+    .sidenav-close {
+        display: block !important;
+    }
+    .carousel.carousel-slider {
+        height: 200vmax!important;
+        min-height: 100vmax;
+    }
+    main {
+        padding-left: 0;
+    }
+    .bloque02 {
+        width: 100%;
+        padding: 1rem;
+        background-size: auto;
+        background-image: url('../img/login.jpg');
+        background-position: center 0;
+        background-attachment: fixed;
+        form {
+            margin-left: 0;
+        }
+        img {
+            display: block;
+        }
+        h3 {
+            display: block;
+        }
+    }
+}
+
+#video_background {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden;
+}
+
+#video_pattern {
+    background: #fff;
+    position: fixed;
+    opacity: 0.8;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.carousel.carousel-slider {
+    height: 100vw;
+    min-height: 100vw;
+}

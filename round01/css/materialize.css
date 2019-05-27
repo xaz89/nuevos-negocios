@@ -5962,7 +5962,7 @@ textarea.materialize-textarea + label:after {
   transform: translateY(-14px) scale(0.8);
   transform-origin: 0 0;
 }
-.input-field > input[type]:-webkit-autofill:not(.browser-default):not([type=search]) + label, .input-field > input[type=date]:not(.browser-default) + label, .input-field > input[type=time]:not(.browser-default) + label {
+.input-field > input[type]:-webkit-autofill:not(.browser-default) + label, .input-field > input[type=date]:not(.browser-default) + label, .input-field > input[type=time]:not(.browser-default) + label {
   transform: translateY(-14px) scale(0.8);
   transform-origin: 0 0;
 }
@@ -8091,9 +8091,707 @@ input[type=range]::-ms-thumb {
     margin-top: 1.2rem;
   }
 }
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 100;
+}
+
+.bloque01 {
+  width: 65%;
+  min-height: 100% !important;
+  height: 100%;
+  background-size: auto;
+  background-image: url("../img/login.jpg");
+  background-position: 10% 0;
+  background-attachment: fixed;
+  padding: 8rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.bloque01 img {
+  width: 10rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.bloque01 a {
+  color: #ffffff;
+}
+
+.bloque02 {
+  width: 35%;
+  min-height: 100% !important;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.bloque02 img {
+  width: 8rem;
+  margin-top: -2rem;
+  display: none;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.bloque02 h3 {
+  margin-bottom: 2rem;
+  display: none;
+  color: #ffffff;
+}
+.bloque02 form {
+  box-shadow: 0rem 0rem 1.5rem 0rem #d1d1d1;
+  margin-left: 0;
+  padding: 3rem;
+  background: white;
+}
+.bloque02 form .btn, .bloque02 form .btn-large, .bloque02 form .btn-small,
+.bloque02 form .btn:hover,
+.bloque02 form .btn-small:hover,
+.bloque02 form .btn-large:hover {
+  background-color: #ffffff;
+  color: #4e4e4e;
+}
+.bloque02 form input:not(.browser-default):focus:not(.browser-default) {
+  border-bottom: 1px solid #00a1dd;
+  -webkit-box-shadow: 0 1px 0 0 #00a1dd;
+  box-shadow: 0 1px 0 0 #00a1dd;
+}
+.bloque02 form input:not(.browser-default):focus:not([readonly]) + label {
+  color: #00a1dd;
+}
+.bloque02 form input:not(.browser-default).valid {
+  border-bottom: 1px solid #00a1dd;
+  -webkit-box-shadow: 0 1px 0 0 #00a1dd;
+  box-shadow: 0 1px 0 0 #00a1dd;
+}
+.bloque02 form .input-field .prefix.active {
+  color: #00a1dd;
+}
+
+.fila {
+  min-height: 100%;
+  height: 100%;
+}
+.fila .col {
+  float: left;
+}
+
+.waves-effect.waves-azul .waves-ripple {
+  background-color: rgba(0, 161, 221, 0.65);
+}
+
 nav {
-  box-shadow: none;
-  background-color: inherit;
+  display: none;
+  background: white;
+}
+nav a {
+  color: initial;
+}
+nav img {
+  width: 4.5rem;
+  margin-right: 1rem;
+  height: auto;
+}
+nav p {
+  font-size: 1rem;
+  margin: 0;
+  color: #4e4e4e;
+}
+
+.modal {
+  left: 20%;
+}
+
+.sidenav {
+  width: 16.7%;
+  z-index: 999999;
+  box-shadow: 0rem 0rem 1rem #adb5bd;
+}
+.sidenav :hover {
+  color: white;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.sidenav :hover:nth-child(3) {
+  background: #00a1dd;
+}
+.sidenav :hover:nth-child(4) {
+  background: #eb007a;
+}
+.sidenav :hover:nth-child(5) {
+  background: #f79032;
+}
+.sidenav :hover:nth-child(6) {
+  background: #005b17;
+}
+.sidenav li:nth-child(3) > .active {
+  color: #ffffff;
+  background: #00a1dd;
+}
+.sidenav li:nth-child(4) > .active {
+  color: #ffffff;
+  background: #eb007a;
+}
+.sidenav li:nth-child(5) > .active {
+  color: #ffffff;
+  background: #f79032;
+}
+.sidenav li:nth-child(6) > .active {
+  color: #ffffff;
+  background: #005b17;
+}
+
+.sidenav li > a {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  height: 5rem;
+  line-height: 5rem;
+  padding: 0 32px;
+}
+
+.sidenav-close {
+  display: none !important;
+  text-align: right;
+}
+.sidenav-close:hover {
+  background-color: transparent !important;
+  color: initial;
+}
+
+main {
+  padding-left: 16.6666666667%;
+}
+
+.brand-logo img {
+  margin: 2.5rem auto;
+  display: block;
+  max-width: 10rem;
+  width: 6rem;
+}
+
+.alta h1,
+.alta h2,
+.alta h3,
+.alta h4,
+.alta h5,
+.alta p {
+  color: #00a1dd;
+}
+.alta .btn, .alta .btn-large, .alta .btn-small,
+.alta .btn:hover,
+.alta .btn-small:hover,
+.alta .btn-large:hover {
+  background-color: #00a1dd;
+}
+.alta input:not(.browser-default):focus:not(.browser-default) {
+  border-bottom: 1px solid #00a1dd;
+  -webkit-box-shadow: 0 1px 0 0 #00a1dd;
+  box-shadow: 0 1px 0 0 #00a1dd;
+}
+.alta input:not(.browser-default):focus:not([readonly]) + label {
+  color: #00a1dd;
+}
+.alta input:not(.browser-default).valid {
+  border-bottom: 1px solid #00a1dd;
+  -webkit-box-shadow: 0 1px 0 0 #00a1dd;
+  box-shadow: 0 1px 0 0 #00a1dd;
+}
+.alta [type=radio]:checked + span:after,
+.alta [type=radio].with-gap:checked + span:before,
+.alta [type=radio].with-gap:checked + span:after {
+  border: 2px solid #00a1dd;
+}
+.alta [type=radio]:checked + span:after,
+.alta [type=radio].with-gap:checked + span:after {
+  background-color: #00a1dd;
+}
+.alta [type=radio]:checked + span:after,
+.alta [type=radio].with-gap:checked + span:before,
+.alta [type=radio].with-gap:checked + span:after {
+  border: 2px solid #00a1dd;
+}
+.alta [type=checkbox]:checked + span:not(.lever):before {
+  border-right: 2px solid #00a1dd;
+  border-bottom: 2px solid #00a1dd;
+}
+.alta .datepicker-date-display {
+  background-color: #00a1dd;
+}
+.alta button:focus {
+  background-color: #00a1dd;
+}
+.alta .datepicker-cancel,
+.alta .datepicker-clear,
+.alta .datepicker-today,
+.alta .datepicker-done {
+  color: #00a1dd;
+}
+.alta .datepicker-table td.is-today {
+  color: #00a1dd;
+}
+.alta .datepicker-table td.is-selected {
+  background-color: #00a1dd;
+}
+.alta .switch label input[type=checkbox]:checked + .lever {
+  background-color: rgba(0, 161, 221, 0.25);
+}
+.alta .switch label .lever:before {
+  background-color: rgba(0, 161, 221, 0.15);
+}
+.alta .switch label input[type=checkbox]:checked + .lever:after {
+  background-color: #00a1dd;
+}
+.alta .tabs .tab a:hover,
+.alta .tabs .tab a.active {
+  color: #00a1dd;
+}
+.alta .tabs .tab a {
+  color: rgba(0, 161, 221, 0.7);
+}
+.alta .tabs .indicator {
+  background-color: #00a1dd;
+}
+.alta .tabs .tab a:focus,
+.alta .tabs .tab a:focus.active {
+  background-color: rgba(0, 161, 221, 0.2);
+}
+
+.busqueda h1,
+.busqueda h2,
+.busqueda h3,
+.busqueda h4,
+.busqueda h5,
+.busqueda p {
+  color: #eb007a;
+}
+.busqueda input:not(.browser-default):focus:not(.browser-default) {
+  border-bottom: 1px solid #eb007a;
+  -webkit-box-shadow: 0 1px 0 0 #eb007a;
+  box-shadow: 0 1px 0 0 #eb007a;
+}
+.busqueda input:not(.browser-default):focus:not([readonly]) + label {
+  color: #eb007a;
+}
+.busqueda input:not(.browser-default).valid {
+  border-bottom: 1px solid #eb007a;
+  -webkit-box-shadow: 0 1px 0 0 #eb007a;
+  box-shadow: 0 1px 0 0 #eb007a;
+}
+.busqueda [type=radio]:checked + span:after,
+.busqueda [type=radio].with-gap:checked + span:before,
+.busqueda [type=radio].with-gap:checked + span:after {
+  border: 2px solid #eb007a;
+}
+.busqueda [type=radio]:checked + span:after,
+.busqueda [type=radio].with-gap:checked + span:after {
+  background-color: #eb007a;
+}
+.busqueda [type=radio]:checked + span:after,
+.busqueda [type=radio].with-gap:checked + span:before,
+.busqueda [type=radio].with-gap:checked + span:after {
+  border: 2px solid #eb007a;
+}
+.busqueda [type=checkbox]:checked + span:not(.lever):before {
+  border-right: 2px solid #eb007a;
+  border-bottom: 2px solid #eb007a;
+}
+.busqueda .datepicker-date-display {
+  background-color: #eb007a;
+}
+.busqueda button:focus {
+  background-color: #eb007a;
+}
+.busqueda .datepicker-cancel,
+.busqueda .datepicker-clear,
+.busqueda .datepicker-today,
+.busqueda .datepicker-done {
+  color: #eb007a;
+}
+.busqueda .datepicker-table td.is-today {
+  color: #eb007a;
+}
+.busqueda .datepicker-table td.is-selected {
+  background-color: #eb007a;
+}
+.busqueda .switch label input[type=checkbox]:checked + .lever {
+  background-color: rgba(235, 0, 122, 0.25);
+}
+.busqueda .switch label .lever:before {
+  background-color: rgba(235, 0, 122, 0.15);
+}
+.busqueda .switch label input[type=checkbox]:checked + .lever:after {
+  background-color: #eb007a;
+}
+.busqueda .tabs .tab a:hover,
+.busqueda .tabs .tab a.active {
+  color: #eb007a;
+}
+.busqueda .tabs .tab a {
+  color: rgba(235, 0, 122, 0.7);
+}
+.busqueda .tabs .indicator {
+  background-color: #eb007a;
+}
+.busqueda .tabs .tab a:focus,
+.busqueda .tabs .tab a:focus.active {
+  background-color: rgba(235, 0, 122, 0.2);
+}
+
+.administracion h1,
+.administracion h2,
+.administracion h3,
+.administracion h4,
+.administracion h5,
+.administracion p {
+  color: #f79032;
+}
+.administracion input:not(.browser-default):focus:not(.browser-default) {
+  border-bottom: 1px solid #f79032;
+  -webkit-box-shadow: 0 1px 0 0 #f79032;
+  box-shadow: 0 1px 0 0 #f79032;
+}
+.administracion input:not(.browser-default):focus:not([readonly]) + label {
+  color: #f79032;
+}
+.administracion input:not(.browser-default).valid {
+  border-bottom: 1px solid #f79032;
+  -webkit-box-shadow: 0 1px 0 0 #f79032;
+  box-shadow: 0 1px 0 0 #f79032;
+}
+.administracion [type=radio]:checked + span:after,
+.administracion [type=radio].with-gap:checked + span:before,
+.administracion [type=radio].with-gap:checked + span:after {
+  border: 2px solid #f79032;
+}
+.administracion [type=radio]:checked + span:after,
+.administracion [type=radio].with-gap:checked + span:after {
+  background-color: #f79032;
+}
+.administracion [type=radio]:checked + span:after,
+.administracion [type=radio].with-gap:checked + span:before,
+.administracion [type=radio].with-gap:checked + span:after {
+  border: 2px solid #f79032;
+}
+.administracion [type=checkbox]:checked + span:not(.lever):before {
+  border-right: 2px solid #f79032;
+  border-bottom: 2px solid #f79032;
+}
+.administracion .datepicker-date-display {
+  background-color: #f79032;
+}
+.administracion button:focus {
+  background-color: #f79032;
+}
+.administracion .datepicker-cancel,
+.administracion .datepicker-clear,
+.administracion .datepicker-today,
+.administracion .datepicker-done {
+  color: #f79032;
+}
+.administracion .datepicker-table td.is-today {
+  color: #f79032;
+}
+.administracion .datepicker-table td.is-selected {
+  background-color: #f79032;
+}
+.administracion .switch label input[type=checkbox]:checked + .lever {
+  background-color: rgba(247, 144, 50, 0.25);
+}
+.administracion .switch label .lever:before {
+  background-color: rgba(247, 144, 50, 0.15);
+}
+.administracion .switch label input[type=checkbox]:checked + .lever:after {
+  background-color: #f79032;
+}
+.administracion .tabs .tab a:hover,
+.administracion .tabs .tab a.active {
+  color: #f79032;
+}
+.administracion .tabs .tab a {
+  color: rgba(247, 144, 50, 0.7);
+}
+.administracion .tabs .indicator {
+  background-color: #f79032;
+}
+.administracion .tabs .tab a:focus,
+.administracion .tabs .tab a:focus.active {
+  background-color: rgba(247, 144, 50, 0.2);
+}
+
+.reportes h1,
+.reportes h2,
+.reportes h3,
+.reportes h4,
+.reportes h5,
+.reportes p {
+  color: #005b17;
+}
+.reportes input:not(.browser-default):focus:not(.browser-default) {
+  border-bottom: 1px solid #005b17;
+  -webkit-box-shadow: 0 1px 0 0 #005b17;
+  box-shadow: 0 1px 0 0 #005b17;
+}
+.reportes input:not(.browser-default):focus:not([readonly]) + label {
+  color: #005b17;
+}
+.reportes input:not(.browser-default).valid {
+  border-bottom: 1px solid #005b17;
+  -webkit-box-shadow: 0 1px 0 0 #005b17;
+  box-shadow: 0 1px 0 0 #005b17;
+}
+.reportes [type=radio]:checked + span:after,
+.reportes [type=radio].with-gap:checked + span:before,
+.reportes [type=radio].with-gap:checked + span:after {
+  border: 2px solid #005b17;
+}
+.reportes [type=radio]:checked + span:after,
+.reportes [type=radio].with-gap:checked + span:after {
+  background-color: #005b17;
+}
+.reportes [type=radio]:checked + span:after,
+.reportes [type=radio].with-gap:checked + span:before,
+.reportes [type=radio].with-gap:checked + span:after {
+  border: 2px solid #005b17;
+}
+.reportes [type=checkbox]:checked + span:not(.lever):before {
+  border-right: 2px solid #005b17;
+  border-bottom: 2px solid #005b17;
+}
+.reportes .datepicker-date-display {
+  background-color: #005b17;
+}
+.reportes button:focus {
+  background-color: #005b17;
+}
+.reportes .datepicker-cancel,
+.reportes .datepicker-clear,
+.reportes .datepicker-today,
+.reportes .datepicker-done {
+  color: #005b17;
+}
+.reportes .datepicker-table td.is-today {
+  color: #005b17;
+}
+.reportes .datepicker-table td.is-selected {
+  background-color: #005b17;
+}
+.reportes .switch label input[type=checkbox]:checked + .lever {
+  background-color: rgba(0, 91, 23, 0.25);
+}
+.reportes .switch label .lever:before {
+  background-color: rgba(0, 91, 23, 0.15);
+}
+.reportes .switch label input[type=checkbox]:checked + .lever:after {
+  background-color: #005b17;
+}
+.reportes .tabs .tab a:hover,
+.reportes .tabs .tab a.active {
+  color: #005b17;
+}
+.reportes .tabs .tab a {
+  color: rgba(0, 91, 23, 0.7);
+}
+.reportes .tabs .indicator {
+  background-color: #005b17;
+}
+.reportes .tabs .tab a:focus,
+.reportes .tabs .tab a:focus.active {
+  background-color: rgba(0, 91, 23, 0.2);
+}
+
+.color {
+  transition-delay: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+
+.hover {
+  position: absolute;
+  z-index: 1015;
+  height: 110vw;
+  width: 83.333333333%;
+  transition-delay: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  top: 0;
+}
+
+.azul {
+  background-color: rgba(0, 161, 221, 0.6);
+  background-image: url("../img/alta.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  /* background-color: rgba($alta, 0.6);
+  background-image: url("../img/alta.png");
+  background-origin: padding-box;
+  background-repeat: no-repeat;
+  background-position-x: 60%;
+  background-position-y: top;
+  background-attachment: fixed; */
+}
+
+.rosa {
+  background-color: rgba(235, 0, 122, 0.6);
+  background-image: url("../img/busqueda.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.amarillo {
+  background-color: rgba(247, 144, 50, 0.6);
+  background-image: url("../img/administracion.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  /* background-color: rgba($administracion, 0.6);
+  background-image: url("../img/administracion.png");
+  background-origin: padding-box;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  background-color: rgba($administracion, .6);
+  background-image: url("../img/administracion.png");
+  /* background-origin: padding-box;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  width: 83.333333333%;
+  left: 17%; */
+}
+
+.verde {
+  background-color: rgba(0, 91, 23, 0.6);
+  background-image: url("../img/reportes.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  /* background-color: rgba(0, 91, 23, 0.6);
+  background-image: url("../img/reportes.png");
+  background-origin: padding-box;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed; */
+}
+
+.dropdown-content li span {
+  color: #4e4e4e !important;
+}
+
+@media only screen and (max-width: 992px) {
+  body {
+    padding-left: 0;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .modal {
+    left: 0;
+  }
+
+  .sidenav {
+    width: auto;
+  }
+  .sidenav .brand-logo img {
+    display: none;
+  }
+
+  .sidenav-close {
+    display: block !important;
+  }
+
+  .carousel.carousel-slider {
+    height: 200vmax !important;
+    min-height: 100vmax;
+  }
+
+  main {
+    padding-left: 0;
+  }
+
+  .bloque02 {
+    width: 100%;
+    padding: 1rem;
+    background-size: auto;
+    background-image: url("../img/login.jpg");
+    background-position: center 0;
+    background-attachment: fixed;
+  }
+  .bloque02 form {
+    margin-left: 0;
+  }
+  .bloque02 img {
+    display: block;
+  }
+  .bloque02 h3 {
+    display: block;
+  }
+}
+#video_background {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  overflow: hidden;
+}
+
+#video_pattern {
+  background: #fff;
+  position: fixed;
+  opacity: 0.8;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.carousel.carousel-slider {
+  height: 100vw;
+  min-height: 100vw;
 }
 
 /*# sourceMappingURL=materialize.css.map */
