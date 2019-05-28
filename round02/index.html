@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link rel="preload" href="img/video2.mp4" as="video">
     <title>LMS Nuevos Negocios</title>
 </head>
 
@@ -18,9 +19,19 @@
     <div class="fila">
         <div class="bloque01 col hide-on-small-only" id="bloque01">
             <video autoplay="autoplay" loop="loop" id="video_background" preload="auto" volume="50" />
-            <source src="img/video.mp4" type="video/mp4" />
+            <source src="img/video2.mp4" type="video/mp4" />
             </video />
-            <img src="img/logo.png" alt="">
+            <!-- <img src="img/logo.png" alt=""> -->
+            <div class="clink">
+                <a class="intro-banner-vdo-play-btn pinkBg" target="_blank">
+                    <img src="img/logo.png" alt="">
+                    <span class="ripple pinkBg"></span>
+                    <span class="ripple azulBg"></span>
+                    <span class="ripple pinkBg"></span>
+                </a>
+            </div>
+
+
             <h1>
                 <a href="" class="typewrite" data-period="2000" data-type='[ "Nuevos Negocios", "Loyalty Marketing Services" ]'>
                     <span class="wrap"></span>
@@ -83,7 +94,7 @@
                 TweenLite.to(form, 1, {
                     right: '0%',
                     backgroundColor: '#fbfbfb',
-                    delay: 0.5,
+                    delay: 1.5,
                     ease: Back.easeOut,
                 });
 
